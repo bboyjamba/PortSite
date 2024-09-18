@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+<link 
+rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+>
+    <header class="container-fluid"> 
+        <title>{{page_title}}</title> 
+        <nav class="container-fluid">
+            <ul>
+                <li><strong>
+                    <a href= "{% url 'home' %}" class="secondary">Baki Malo</a>
+                    <!-- replace with baki logo -->
+                </strong></li>
+              </ul>
+            <ul>
+                  <details class="dropdown">
+                    <summary>
+                      Baki
+                    </summary>
+                    <ul dir="rtl">
+                      <li><a href="about">About</a></li>
+                      <li><a href="live">Live Stream</a></li>
+                      <li><a href="#">Certs</a></li>
+                      <li><a href="gallery">Gallery</a></li>
+                    </ul>
+                  </details>
+                  <li><a href="https://www.instagram.com/baki.malo/" class="fa fa-instagram"></a></li>
+                  <li><a href="portfolio" class="secondary">Portfolio</a></li>
+                  <li>
+                </li>
+              </ul>
+          </nav>
+    
+    </header> 
+</head>
+<body>
+    <div class="bakipages"> </div>
+    <h1></h1>
+    {% block content %}
+    {% endblock %}
+</body>
+<footer class="container">
+  <container class="grid">
+    <div>
+      <a>
+        <header class="secondary">Card 1</header>
+      body 
+      </a>
+    </div>
+    <div> 
+      <a>
+        <header class="secondary">Card 2</header>
+      body 
+      </a>
+    </div>
+    <div>
+      <header class="secondary">Card 3</header>
+    body
+    </div>
+  </container>
+</footer>
+</html>
